@@ -1,0 +1,83 @@
+@import 'nav.css';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Klee One', cursive;
+    box-sizing: border-box;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(238, 238, 238);
+    z-index: 9;
+}
+
+.navbar{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks{
+    padding: 10px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+.herosec{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url('../Images/italian-fashion-preview.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herosec .name{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.herosec .subtext{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.products{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.discount-product{
+    padding: 0 10vw;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
