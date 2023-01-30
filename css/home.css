@@ -1,18 +1,21 @@
-@import 'nav.css';
+@import 'Shopping.css';
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Klee One', cursive;
+    font-family: 'Itim';
+    font-size: 22px;
     box-sizing: border-box;
 }
-
+h2{
+    font-size: 35px;
+}
 .header{
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background: rgb(238, 238, 238);
-    z-index: 9;
+    z-index: 1;
 }
 
 .navbar{
@@ -41,6 +44,12 @@
 .link:hover{
     opacity: 1;
 }
+
+.navbar a.split {
+    float: right;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+  }
 
 .herosec{
     width: 100%;
@@ -78,6 +87,4 @@
     font-size: 30px;
     font-weight: 500;
 }
-
-
-
+  
