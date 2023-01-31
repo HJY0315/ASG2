@@ -89,21 +89,19 @@ h2{
     font-size: 30px;
     font-weight: 500;
 }
-<<<<<<<<< Temporary merge branch 1
-  
-=========
 
 .product-container{
     padding: 0 10vw;
     display: flex;
-    overflow-x: smooth;
+    overflow-x:scroll;
+
 }
 
 .product-card{
     flex: 0 0 auto;
     width: 250px;
     height: 450px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .product-image{
@@ -115,17 +113,47 @@ h2{
 
 
 .product-image img{
-    max-width: 250px;
+    max-width: 205px;
     
 }
 
 .discount-tag{
-    padding: 5px;
-    right: 10px;
-    top: 10px;
-    background: white;
+    padding: 2px;
+    top: 0px;
+    left: 158px;
+    background: rgba(255, 0, 0, 0.715);
     border-radius: 5px;
-    color: red;
+    color: rgb(255, 255, 255);
     position: absolute;
+    opacity: 2;
 }
->>>>>>>>> Temporary merge branch 2
+
+.footer{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.footer-container-icon{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x:fixed;
+    justify-content: right;
+    text-align: right;
+}
+
+.footer-container-about{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x:fixed;
+    justify-content: left;
+    text-align: left;
+}
+
+.footer-word-wrap{
+    word-wrap:normal;
+}
