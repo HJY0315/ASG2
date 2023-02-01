@@ -23,8 +23,8 @@
 
   .dropbtn {
     color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 20px;
     border: none;
   }
   
@@ -47,11 +47,11 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 17px;
   }
   
   .dropdown-content a:hover {background-color: rgb(116, 117, 140);}
   
-
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #c8a76e;}
