@@ -363,6 +363,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 ul{
     list-style: none;
     word-break: break-word;
@@ -374,7 +375,7 @@ ul{
 }
 
 .footer-col{
-    width: 40%;
+    width: 25%;
     padding: 50px 50px;
 }
 
@@ -399,6 +400,7 @@ ul{
 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
+
 }
 
 .footer-col ul li a{
@@ -410,6 +412,7 @@ ul{
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
+
 }
 
 .footer-col ul li a:hover{
