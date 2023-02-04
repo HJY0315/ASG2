@@ -3,11 +3,11 @@
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
   {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("header").style.top = "-50px";
   } 
   if (document.body.scrollBottom > 20 || document.documentElement.scrollBottom > 20)
   {
-    document.getElementById("navbar").style.top = "1px";
+    document.getElementById("header").style.top = "0px";
   }
 }*/
 
@@ -17,7 +17,7 @@ const prevbutton = [...document.querySelectorAll('.prev-button')];
 
 productContainer.forEach((item, i) => {
     let c = item.getBoundingClientRect();
-    let containerWidth = c.width-500;
+    let containerWidth = c.width-200;
 
     nextbutton[i].addEventListener('click', () => {
       item.scrollLeft += containerWidth;
