@@ -1,15 +1,3 @@
-/*window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-  {
-    document.getElementById("header").style.top = "-50px";
-  } 
-  if (document.body.scrollBottom > 20 || document.documentElement.scrollBottom > 20)
-  {
-    document.getElementById("header").style.top = "0px";
-  }
-}*/
 
 const productContainer = [...document.querySelectorAll('.product-container')];
 const nextbutton = [...document.querySelectorAll('.next-button')];
