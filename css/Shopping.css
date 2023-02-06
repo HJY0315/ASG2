@@ -8,7 +8,7 @@
 }
 /*header*/
 .header2{
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -38,7 +38,7 @@
   }
   
   .dropdown {
-    position: relative;
+    position: sticky;
     display: inline-block;
   }
   
@@ -65,7 +65,92 @@
   
   .dropdown:hover .dropbtn {background-color: #c8a76e;}
   
-  /*price range*/
+ /*sidebar*/
+aside {
+    width: 15%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: rgb(164, 162, 162);
+    border-radius: 10%;
+    height: 225px;
+  }
+h4{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: capitalize;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 2px;
+    height: 7px;
+    border: solid rgb(114, 46, 46);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*price range*/
   .card {
     width:155px;
     background-color: rgba(215, 164, 166, 0.804);
@@ -141,7 +226,136 @@
     border: none;
   }
 
-  
+/*product*/
+  .products{
+    padding: 0 10vw;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.product-container{
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 40px;
+}
+
+.product-card{
+  flex: 0 0 auto;
+  width: 250px;
+  height: 430px;
+}
+
+.product-image{
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.product-image img{
+  max-width: 220px;
+  max-height: 290px;
+  height: 290px;
+}
+
+  /*women's section*/
+.womens{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.womens .prev-button, .womens .next-button{
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255, 0) 0%, white 100%);
+  cursor: pointer;
+  z-index: 2;
+}
+.ladies-col{
+  padding: 0 10vw;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.ladies-col span{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.ladies-col a{
+  text-decoration: none;
+  bottom: 0;
+  font-size: 25px;
+}
+  /*Men's section*/
+  .mens{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.mens .prev-button, .mens .next-button{
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255, 0) 0%, white 100%);
+  cursor: pointer;
+  z-index: 2;
+}
+.mens-col{
+  padding: 0 10vw;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.mens-col span{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.mens-col a{
+  text-decoration: none;
+  bottom: 0;
+  font-size: 25px;
+}
+
+.prev-button{
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.next-button{
+  right: 0;
+}
+
+.prev-button img, .next-button img{
+  opacity: 0.3;
+}
+
+.prev-button:hover img, .next-button:hover img{
+  opacity: 1;
+}
+
   /*footer*/
   .container{
     max-width: 1170px;

@@ -5,11 +5,13 @@
     padding:0;
     box-sizing:border-box;
     font-family: itim;
+    font-size: 20px;
 }
 /*header*/
 h2{
-    font-size: 35px;
+    font-size: 40px;
 }
+
 .header{
     position: sticky;
     top: 0;
@@ -23,6 +25,10 @@ h2{
     padding: 10px 10vw;
     display: flex;
     justify-content: space-between;
+}
+
+.header2 h2{
+  font-size: 25px;
 }
 
 .navlinks{
@@ -56,162 +62,108 @@ h2{
 aside {
     width: 15%;
     padding-left: 15px;
-    margin-left: 15px;
+    margin-left: 25px;
     float: left;
     font-style: italic;
     background-color: rgb(164, 162, 162);
     border-radius: 10%;
-    height: 225px;
+    height: 150px;
+    position: absolute;
+    margin-top: 60px;
+    opacity: 1;
   }
 h4{
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
-    margin-top: 5px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-/* The container */
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-top: 50px;
-    cursor: pointer;
-    font-size: 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-transform: capitalize;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    height: 13px;
-    width: 13px;
-    background-color: rgb(250, 250, 250);
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 4px;
-    top: 1px;
-    width: 2px;
-    height: 7px;
-    border: solid rgb(114, 46, 46);
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-/*price range*/
-  .card {
-    width:155px;
-    background-color: rgba(215, 164, 166, 0.804);
-    border-radius: 10%;
-    padding: 5px;
-    height:90px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-  
-  h3 {
-    color: rgb(100, 100, 100);
-    margin-bottom: 5px;
-    text-align: center;
-    font-weight: 600;
-    margin-top:0px;
-    font-size: 18px;
-  }
-  
-  .price-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 5px;
-    font-size: 5px;
-  }
-  
-  label {
-    font-size: 15px;
-    font-weight: 350;
-  }
-  
-  p {
-    font-size: 5px;
-    font-weight: 300;
-    top: -5px;
-  }
-  
-  .range-slider {
-    width: 140px;
-    position: relative;
-    margin: 1px 0 15px 0;
-    top: -10px;
-    left: 3px;
 
+/*filter*/
+.filters__list li {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding-bottom: 1em;
+  line-height: 0;
+  text-transform: capitalize;
+}
+
+.filters__list li:last-child {
+  padding-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+  margin-bottom: -3px;
+}
+
+/*product*/
+product-container{
+  display:grid;
+  gap: 50px;
+}
+
+ul.product-container{
+  display: grid;
+  margin-left: 250px;
+  margin-top: 60px;
+  grid-template-columns: repeat(auto-fit, 9rem);
+}
+
+li.product-container{
+  list-style: none;
+}
+
+.product-card{
+  margin-bottom: 15px;
+}
+
+.product-card .product-image{
+position:static;
+width:fit-content;
+height: fit-content;
+display:grid;
+margin-left: 11px;
+margin-bottom: 5px;
+}
+
+.product-card .product-image img{
+max-width: 250px;
+max-height: 230px;
+height: 290px;
+}
+
+.product-card h2{
+  font-size: 15px;
+  justify-content: center;
+  text-align: center;
   }
-  
-  input[type=range] {
-    -webkit-appearance: none;
-    width: 100%;
-    background: transparent; 
-    position: absolute;
-    left: 0;
-  }
-  
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #36b37e;
-    cursor: pointer;
-    margin-top: -3px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 4px;
-    background: #674a4a;
-    border-radius: 3px;
-    border: none;
-  }
+
+.product-card .prices{
+  text-align: center;
+}
+
+.product-card .prices span{
+  font-size: 17px;
+}
+
+.product-card .Add-btn{
+  padding: 5px;
+  width: 85%;
+  margin-top: 5px;
+  margin-left: 11px;
+  max-width: 190px;
+  background: rgb(233, 233, 233);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-card .Add-btn:hover{
+  background: rgb(210, 210, 210);
+}
 
 /*footer*/
 .container{
@@ -247,6 +199,7 @@ ul{
     font-weight: 500;
     position: relative;
 }
+
 .footer-col h4::before{
     content: '';
     position: absolute;
@@ -320,7 +273,22 @@ p{
 }
 
 /*responsive*/
+@media(max-width: 1450px) {
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+}
+
 @media(max-width: 767px) {
+
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
@@ -328,6 +296,12 @@ p{
 }
 
 @media(max-width: 564px) {
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+
     .footer-col{
         width: 100%;
     }
