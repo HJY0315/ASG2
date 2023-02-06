@@ -15,3 +15,20 @@ productContainer.forEach((item, i) => {
       item.scrollLeft -= containerWidth;
     })
 });
+
+const getimage = {
+  image: function(){
+    return this.image1;
+  }
+}
+
+const products = document.querySelectorAll(".product-image a img");
+const Images = {};
+
+product.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    Images = {
+      image1: item.src
+    }
+  })
+})

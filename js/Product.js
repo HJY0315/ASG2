@@ -1,3 +1,5 @@
+
+
 //This is for showing different product images on product page
 const productImages = document.querySelectorAll(".product-images img");
 const productActiveImage = document.querySelector(".active-image .active");
@@ -14,6 +16,7 @@ productImages.forEach((item, i) => {
 })
 
 
+
 //This is for selecting radio size button
 
 const sizebtn = document.querySelectorAll('.size-radio-button');
@@ -26,3 +29,10 @@ sizebtn.forEach((item, i) => {
         checkedbtn = i;
     })
 })
+
+
+var source = getimage.image.call(Images);
+
+const image = document.querySelectorAll(".product-images img");
+
+image[0].src = source;
