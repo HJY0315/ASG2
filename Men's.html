@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Website for ID ASG1">
 	<title>ID ASG2 Website</title>
-	<link href="css/home.css" rel="stylesheet" type="text/css" />  
-    <link href="css/Shopping.css" rel="stylesheet" type="text/css"/>
+	<link href="css/Men.css" rel="stylesheet" type="text/css" />  
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href='https://fonts.google.com/specimen/Itim' rel='stylesheet'>
@@ -35,44 +34,147 @@
         <div class="navbar">
             <marquee><h2>Welcome to the Men's section</h2></marquee>
         </div>
-    </nav>
-    <aside>
-        <section class="siderbar">
-            <h4>Mens</h4>
-            <label class="container">shirt
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">pants
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">hoodies
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <div class="card">
-                <h3>Price Range</h3>
-          
-                <div class="price-content">
-                  <div>
-                    <label>Min</label>
-                    <p id="min-value">$10</p>
-                  </div>
-          
-                  <div>
-                    <label>Max</label>
-                    <p id="max-value">$40</p>
-                  </div>
-                </div>
-          
-                  <div class="range-slider">
-                    <input type="range" class="min-price" value="100" min="10" max="40" step="10">
-                    <input type="range" class="max-price" value="250" min="10" max="40" step="10">
-                  </div>
+    </nav><hr>
+
+    <!--filter-->
+<aside>
+    <h4>Mens</h4>
+    <div id="filter-container" class="filters" >
+        <ul class="filters__list">
+          <li>
+        <input id="shirt" type="checkbox" onchange="change()"/>
+          <label for="shirt">Shirt</label>
+          </li>
+              <li>
+        <input id="pants" type="checkbox" onchange="change()"/>
+          <label for="pants">Pants</label>
+          </li>
+              <li>
+        <input id="jacket" type="checkbox" onchange="change()"/>
+          <label for="jacket">Jacket</label>
+          </li>   
+        </ul>
+    </div>
+</aside>
+
+<!--product-->
+<ul class="product-container">
+    <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">-25%</span>
+              <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_12.jpg" alt=""></a>
+              <img src="Images/DiscountProduct_C_11_1.jpg" class="hidden">
+              <img src="Images/DiscountProduct_C_11_2.jpg" class="hidden">
+              <img src="Images/DiscountProduct_C_11_3.jpg" class="hidden">
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Nike Sportswear Heatwave T-Shirt</h2>
+              <div class="discountprices">
+                <span class="price">$33.75</span><span class="normal-price">$45</span>
               </div>
-        </section>
-            </aside>
+              <div class="hidden">
+                <p>Black</p>
+                <p>Short</p>
+                <p>Regular Fit</p>
+                <p>Denim</p>
+                <p>Machine wash, do not dry clean</p>
+                <p>62% Cotton, 37% Polyester, 1% Viscose</p>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">-20%</span>
+              <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_13.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Jordan Essentials T-Shirt</h2>
+              <div class="discountprices">
+                <span class="price">$44</span><span class="normal-price">$55</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="jacket">
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">-10%</span>
+              <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_14.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Fred Perry Tape Overhead Hoodie</h2>
+              <div class="discountprices">
+                <span class="price">$27</span><span class="normal-price">$30</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_11.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Adidas Outdoor Tie-Dye T-Shirt</h2>
+              <div class="prices">
+                <span class="normal-price">$10</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_12.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Nike Sportswear Modern Collegiate Badge T-Shirt</h2>
+              <div class="prices">
+                <span class="normal-price">$45</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_13.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Adidas Modern Collegiate Badge T-Shirt</h2>
+              <div class="prices">
+                <span class="normal-price">$60</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_14.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Nike Sportswear T-Shirt</h2>
+              <div class="prices">
+                <span class="normal-price">$45</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </li>
+      </ul>
+
+
+            <!--footer-->
     <footer class="footer">
         <!-- Grid container -->
         <div class="container">

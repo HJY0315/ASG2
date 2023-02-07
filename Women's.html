@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Website for ID ASG1">
 	<title>ID ASG2 Website</title>
-	<link href="css/home.css" rel="stylesheet" type="text/css" />  
-    <link href="css/Shopping.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Women.css" rel="stylesheet" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href='https://fonts.google.com/specimen/Itim' rel='stylesheet'>
@@ -31,48 +30,634 @@
             </a>
         </div>
     </nav>
-    <nav class="header">
+    <nav class="header2">
         <div class="navbar">
             <marquee><h2>Welcome to the Women's section</h2></marquee>
         </div>
-    </nav>
-    <aside>
-        <section class="siderbar">
-            <h4>Womens</h4>
-            <label class="container">dress
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">shirt
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">pants
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <div class="card">
-                <h3>Price Range</h3>
-          
-                <div class="price-content">
-                  <div>
-                    <label>Min</label>
-                    <p id="min-value">$10</p>
-                  </div>
-          
-                  <div>
-                    <label>Max</label>
-                    <p id="max-value">$40</p>
-                  </div>
+    </nav><hr>
+
+    <!--filter-->
+<aside>
+    <h4>Womens</h4>
+    <div id="filter-container" class="filters" >
+        <ul class="filters__list">
+          <li>
+        <input id="dress" type="checkbox" onchange="change()"/>
+          <label for="dress">Dress</label>
+          </li>
+              <li>
+        <input id="shirt" type="checkbox" onchange="change()"/>
+          <label for="shirt">Shirt</label>
+          </li>
+              <li>
+        <input id="pants" type="checkbox" onchange="change()"/>
+          <label for="pants">Pants</label>
+          </li>   
+          <li>
+            <input id="skirt" type="checkbox" onchange="change()"/>
+            <label for="skirt">Skirt</label>
+          </li>
+          <li>
+            <input id="jacket" type="checkbox" onchange="change()"/>
+            <label for="jacket">Jacket</label>
+          </li>
+        </ul>
+    </div>
+</aside>
+
+<!--product-->
+<ul class="product-container">
+    <li class="dress">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">-20%</span>
+                    <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_1.jpg" id="1" alt=""></a>
+                    <img src="Images/DiscountProduct_C_1_1.jpg" class="hidden">
+                    <img src="Images/DiscountProduct_C_1_2.jpg" class="hidden">
+                    <img src="Images/DiscountProduct_C_1_3.jpg" class="hidden">
                 </div>
-          
-                  <div class="range-slider">
-                    <input type="range" class="min-price" value="100" min="10" max="40" step="10">
-                    <input type="range" class="max-price" value="250" min="10" max="40" step="10">
-                  </div>
+                <div class="product-info">
+                    <h2 class="product-name">Keyhole Neck Tie Tropical & Striped Dress</h2>
+                    <div class="discountprices">
+                      <span class="price">$20</span><span class="normal-price">$25</span>
+                    </div>
+                    <div class="hidden">
+                      <p>Multicolor</p>
+                      <p>Long</p>
+                      <p>Regular Fit</p>
+                      <p>Fabric</p>
+                      <p>Machine wash or professional dry clean</p>
+                      <p>92% Polyester, 8% Elastane</p>
+                    </div>
+                    <button class="Add-btn">Add to Cart</button>
+                </div>
+            </div>
+        </li>
+            <li class="dress">
+            <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">-30%</span>
+                  <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_2.jpg" id="2" alt=""></a>
+                  <img src="Images/DiscountProduct_C_2_1.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_2_2.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_2_3.jpg" class="hidden">
               </div>
-        </section>
-            </aside>
+              <div class="product-info">
+                  <h2 class="product-name">Plants Print Puff Sleeve Belted Dress</h2>
+                  <div class="discountprices">
+                    <span class="price">$21</span><span class="normal-price">$30</span>
+                  </div>
+                  <div class="hidden">
+                    <p>White</p>
+                    <p>Long</p>
+                    <p>Regular Fit</p>
+                    <p>Fabric</p>
+                    <p>Machine wash or professional dry clean</p>
+                    <p>100% Polyester</p>
+                  </div>
+                  <button class="Add-btn">Add to Cart</button>
+              </div>
+            </div>
+        </li>
+        <li class="dress">
+            <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">-10%</span>
+                  <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_3.jpg" alt=""></a>
+                  <img src="Images/DiscountProduct_C_3_1.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_3_2.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_3_3.jpg" class="hidden">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-name">Flutter Sleeve Belted Dress</h2>
+                  <div class="discountprices">
+                    <span class="price">$22.50</span><span class="normal-price">$25</span>
+                  </div>
+                  <div class="hidden">
+                    <p>Black</p>
+                    <p>Midi</p>
+                    <p>Regular Fit</p>
+                    <p>Fabric</p>
+                    <p>Machine wash or professional dry clean</p>
+                    <p>100% Polyester</p>
+                  </div>
+                  <button class="Add-btn">Add to Cart</button>
+              </div>
+            </div>
+        </li>
+        <li class="skirt">
+            <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">-10%</span>
+                  <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_4.jpg" alt=""></a>
+                  <img src="Images/DiscountProduct_C_4_1.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_4_2.jpg" class="hidden">
+                  <img src="Images/DiscountProduct_C_4_3.jpg" class="hidden">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-name">Tie Side Pocket Patched Geo Print Cargo Skirt</h2>
+                  <div class="discountprices">
+                    <span class="price">$13.50</span><span class="normal-price">$15</span>
+                  </div>
+                  <div class="hidden">
+                    <p>Black</p>
+                    <p>Mini</p>
+                    <p>Regular Fit</p>
+                    <p>Fabric</p>
+                    <p>Machine wash or professional dry clean</p>
+                    <p>74% Viscose, 26% Linen</p>
+                  </div>
+                  <button class="Add-btn">Add to Cart</button>
+              </div>
+            </div>
+        </li>
+        <li class="jacket">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-tag">-10%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_5.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_5_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_5_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_5_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Solid Open Front Blazer</h2>
+                <div class="discountprices">
+                  <span class="price">$16.20</span><span class="normal-price">$18</span>
+                </div>
+                <div class="hidden">
+                  <p>Black</p>
+                  <p>Regular</p>
+                  <p>Regular Fit</p>
+                  <p>Woven Fabric</p>
+                  <p>Hand wash or professional dry clean</p>
+                  <p>100% Polyester</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="pants">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-15%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_6.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_6_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_6_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_6_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">High Waist Plicated Detail Pants</h2>
+                <div class="discountprices">
+                  <span class="price">$17</span><span class="normal-price">$20</span>
+                </div>
+                <div class="hidden">
+                  <p>Khaki</p>
+                  <p>Long</p>
+                  <p>Loose</p>
+                  <p>Fabric</p>
+                  <p>Hand wash or professional dry clean</p>
+                  <p>100% Polyester</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="shirt">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-19%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_7.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_7_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_7_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_7_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Slogan & Cartoon Graphic Tee</h2>
+                <div class="discountprices">
+                  <span class="price">$6.49</span><span class="normal-price">$8</span>
+                </div>
+                <div class="hidden">
+                  <p>Dark Green</p>
+                  <p>Regular</p>
+                  <p>Regular Fit</p>
+                  <p>Fabric</p>
+                  <p>Machine wash or professional dry clean</p>
+                  <p>94% Polyester, 6% Spandex</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="jacket">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-10%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_8.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_8_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_8_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_8_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Solid Lapel Neck Buttoned Blazer</h2>
+                <div class="discountprices">
+                  <span class="price">$20.70</span><span class="normal-price">$23</span>
+                </div>
+                <div class="hidden">
+                  <p>Black</p>
+                  <p>Regular</p>
+                  <p>Regular Fit</p>
+                  <p>Fabric</p>
+                  <p>Machine wash or professional dry clean</p>
+                  <p>97% Polyester, 3% Spandex</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="pants">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-16%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_9.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_9_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_9_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_9_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">High Waist Flap Pocket Whip Stitch Cargo Jeans</h2>
+                <div class="discountprices">
+                  <span class="price">$23.49</span><span class="normal-price">$28</span>
+                </div>
+                <div class="hidden">
+                  <p>Black</p>
+                  <p>Long</p>
+                  <p>Regular Fit</p>
+                  <p>Denim</p>
+                  <p>Machine wash, do not dry clean</p>
+                  <p>70% Cotton, 24% Polyester, 6% Viscose</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="pants">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-16%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_10.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_10_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_10_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_10_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">High Waist Skinny Jeans</h2>
+                <div class="discountprices">
+                  <span class="price">$18.49</span><span class="normal-price">$22</span>
+                </div>
+                <div class="hidden">
+                  <p>Black</p>
+                  <p>Cropped</p>
+                  <p>Skinny</p>
+                  <p>Denim</p>
+                  <p>Machine wash, do not dry clean</p>
+                  <p>61% Cotton, 31% Polyester, 7% Viscose, 1% Elastane</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="dress">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-20%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_11.jpg" alt=""></a>
+                <img src="Images/DiscountProduct_C_11_1.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_11_2.jpg" class="hidden">
+                <img src="Images/DiscountProduct_C_11_3.jpg" class="hidden">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Drop Shoulder Top-stitching Denim Dress</h2>
+                <div class="discountprices">
+                  <span class="price">$30.40</span><span class="normal-price">$38</span>
+                </div>
+                <div class="hidden">
+                  <p>Black</p>
+                  <p>Short</p>
+                  <p>Regular Fit</p>
+                  <p>Denim</p>
+                  <p>Machine wash, do not dry clean</p>
+                  <p>62% Cotton, 37% Polyester, 1% Viscose</p>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="shirt">
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">-19%</span>
+                <a href="Product-cloth.html"><img src="Images/DiscountProduct_C_15.jpg" alt=""></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Dog & Slogan Graphic Tee</h2>
+                <div class="discountprices">
+                  <span class="price">$6.49</span><span class="normal-price">$8</span>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="shirt">
+        <div class="product-card">
+            <div class="product-image">
+              <a href="Product-cloth.html"><img src="Images/PopularProduct_C_1.jpg" alt=""></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Cartoon And Letter Graphic Tee</h2>
+                <div class="prices">
+                  <span class="normal-price">$9</span>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+        </div>
+    </li>
+    <li class="pants">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_2.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Corduroy Cropped Pinafore Jumpsuit</h2>
+              <div class="prices">
+                <span class="normal-price">$20</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+    </li>
+    <li class="jacket">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_3.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">Drop Shoulder Drawstring Zipper Hoodie</h2>
+              <div class="prices">
+                <span class="normal-price">$19</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+    </li>
+    <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_4.jpg" alt=""></a>
+          </div>
+          <div class="product-info">
+              <h2 class="product-name">DAZY Letter Graphic Drop Shoulder Tee</h2>
+              <div class="prices">
+                <span class="normal-price">$12</span>
+              </div>
+              <button class="Add-btn">Add to Cart</button>
+          </div>
+        </div>
+    </li>
+    <li class="shirt">
+        <div class="product-card">
+          <div class="product-image">
+            <a href="Product-cloth.html"><img src="Images/PopularProduct_C_5.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Notch Neck Roll Tab Sleeve Floral Top</h2>
+            <div class="prices">
+              <span class="normal-price">$15</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="dress">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_6.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Drop Shoulder Ruffle Hem Sweatshirt Dress</h2>
+            <div class="prices">
+              <span class="normal-price">$26</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="shirt">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_7.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Ditsy Floral Keyhole Back Puff Sleeve Blouse</h2>
+            <div class="prices">
+              <span class="normal-price">$11</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="jacket">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_8.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Honeyspot Stripe Ripped Drop Shoulder Sweater</h2>
+            <div class="prices">
+              <span class="normal-price">$21</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="pants">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_9.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">High Rise Crop Mom Jeans</h2>
+            <div class="prices">
+              <span class="normal-price">$21</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="dress">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_10.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Tropical Print Sleeveless Keyhole Back Dress</h2>
+            <div class="prices">
+              <span class="normal-price">$10</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="pants">
+      <div class="product-card">
+        <div class="product-image">
+          <a href="Product-cloth.html"><img src="Images/PopularProduct_C_15.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Frenchy Knot Waist Palazzo Pants</h2>
+            <div class="prices">
+              <span class="normal-price">$18</span>
+            </div>
+            <button class="Add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </li>
+    <li class="pants">
+        <div class="product-card">
+            <div class="product-image">
+              <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/28/16721949076961cf5b6a26cb03ccb53dc1db422a98.webp" alt=""></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">DAZY Drawstring Waist Slant Pocket Sweatpants</h2>
+                <div class="prices">
+                  <span class="normal-price">$XX</span>
+                </div>
+                <button class="Add-btn">Add to Cart</button>
+            </div>
+        </div>
+    </li>
+    <li class="pants">
+        <div class="product-card">
+            <div class="product-image">
+              <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2023/01/30/16750646302ba482dee1c088ed7c8d31a6e6476411.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">EMERY ROSE Paperbag Waist Slant Pocket Shorts</h2>
+                        <div class="prices">
+                          <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="skirt">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/08/29/1630209037bb3d5b2bd140e0c0479963f0652cb736.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">High Waist Solid Pleated Skirt</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="skirt">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/04/09/16179377774f82fbb863278e6802ff4a7f0b85ed0b.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">SHEIN VCAY Tie Front Ditsy Floral Top & Frill Trim Skirt Set</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="skirt">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/05/165171536365bda8952dfd0c763d6e67f71fc4bb07.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">Floral Print A-line Skirt</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="shirt">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/07/22/16584555620646584d2cd3d17123079c08f683aa2b.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">DAZY Solid Adjustable Straps Cami Top</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="shirt">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2023/01/28/1674903855920160d91651e2e30732dea6959cee26_thumbnail_900x.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">DAZY Tie Dye Top-stitching Asymmetrical Hem Top</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="dress">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/03/28/16484367645158729baf8ddbc71fe82accaa7cbab5_thumbnail_900x.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">SHEIN VCAY Puff Sleeve Contrast Eyelet Embroidery Ruffle Hem Dress</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li class="dress">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="Product-cloth.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/1639037148146faabca930769373edf30fcdab7482.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-name">Plant Print Cut Out Tie Back Lantern Sleeve Dress</h2>
+                        <div class="prices">
+                            <span class="normal-price">$XX</span>
+                        </div>
+                        <button class="Add-btn">Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+            <!--footer-->
     <footer class="footer">
         <!-- Grid container -->
         <div class="container">
@@ -116,5 +701,8 @@
         </div>
         <!-- Grid container -->
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/home.js"></script>
+      <script src="js/Product cloth.js"></script>
       </body>
       </html>
