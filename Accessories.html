@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Website for ID ASG1">
 	<title>ID ASG2 Website</title>
-	<link href="css/home.css" rel="stylesheet" type="text/css" />  
-    <link href="css/Shopping.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Accessories.css" rel="stylesheet" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href='https://fonts.google.com/specimen/Itim' rel='stylesheet'>
@@ -36,14 +35,14 @@
         <div class="navbar">
                 <ul class="navlinks">
                     <div class="dropdown">
-                        <li class="dropbtn" >Clothing</li>
+                        <li class="dropbtn"><a href="Shopping.html" class="link">Clothing</a></li>
                         <div class="dropdown-content">
                             <a href="Women's.html">Women's</a>
                             <a href="Men's.html">Men's</a>
                         </div> 
                     </div>
                     <div class="dropdown">
-                        <li class="dropbtn"><a href="Accessories.html">Accessories</a></li>
+                        <li class="dropbtn"><a href="Accessories.html" class="link">Accessories</a></li>
                         <div class="dropdown-content">
                             <a href="#">Necklackes</a>
                             <a href="#">Rings</a>
@@ -51,7 +50,7 @@
                         </div> 
                     </div>
                     <div class="dropdown">
-                        <li class="dropbtn"><a href="Shoes.html">Shoes</a></li>
+                        <li class="dropbtn"><a href="Shoes.html" class="link">Shoes</a></li>
                         <div class="dropdown-content">
                             <a href="#">Flats</a>
                             <a href="#">Heels</a>
@@ -61,43 +60,29 @@
         
         </div>
     </nav>
-    <aside>
-        <section class="siderbar">
-            <h4>Accessories</h4>
-            <label class="container">necklaces
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">rings
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">earrings
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <div class="card">
-                <h3>Price Range</h3>
-          
-                <div class="price-content">
-                  <div>
-                    <label>Min</label>
-                    <p id="min-value">$8</p>
-                  </div>
-          
-                  <div>
-                    <label>Max</label>
-                    <p id="max-value">$50</p>
-                  </div>
-                </div>
-          
-                  <div class="range-slider">
-                    <input type="range" class="min-price" value="100" min="10" max="40" step="10">
-                    <input type="range" class="max-price" value="250" min="10" max="40" step="10">
-                  </div>
-              </div>
-        </section>
-            </aside>
+
+    <!--filter-->
+<aside>
+    <h4>Accessories</h4>
+    <div id="filter-container" class="filters" >
+        <ul class="filters__list">
+          <li>
+        <input id="necklackes" type="checkbox" onchange="change()"/>
+          <label for="necklackes">Necklackes</label>
+          </li>
+              <li>
+        <input id="rings" type="checkbox" onchange="change()"/>
+          <label for="rings">Rings</label>
+          </li>
+              <li>
+        <input id="earrings" type="checkbox" onchange="change()"/>
+          <label for="earrings">Earrings</label>
+          </li>   
+        </ul>
+    </div>
+</aside>
+
+<!--footer-->
     <footer class="footer">
         <!-- Grid container -->
         <div class="container">
