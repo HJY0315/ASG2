@@ -210,13 +210,14 @@
 .popular-book .product-image{
     position: relative;
     width: 100%;
-    height: 290px;
+    height: 220px;
     overflow: hidden;
 }
 
 .popular-book .product-image img{
-    height: 290px;
-    width: 220px;
+    max-width: 220px;
+    max-height: 220px;
+    margin-left: 37px;
 }
 
 .popular-book .product-name{
@@ -353,6 +354,10 @@
 
 .prev-button:hover img, .next-button:hover img{
     opacity: 1;
+}
+
+strong{
+    color: rgb(65, 54, 54);
 }
 
 /*footer*/
