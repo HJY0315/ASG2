@@ -64,6 +64,7 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #c8a76e;}
+
   
   /*price range*/
   .card {
@@ -140,6 +141,7 @@
     border-radius: 3px;
     border: none;
   }
+
 
   
   /*footer*/
@@ -248,7 +250,22 @@ p{
 }
 
 /*responsive*/
+@media(max-width: 1950px) {
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+}
+
 @media(max-width: 767px) {
+
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
@@ -256,6 +273,13 @@ p{
 }
 
 @media(max-width: 564px) {
+
+  aside{
+    width: 170px;
+    padding: 15px;
+    margin-left: 45px;
+  }
+
     .footer-col{
         width: 100%;
     }
