@@ -1,3 +1,5 @@
+
+
 //This is for showing different product images on product page
 const productImages = document.querySelectorAll(".product-images img");
 const productActiveImage = document.querySelector(".active-image .active");
@@ -13,8 +15,11 @@ productImages.forEach((item, i) => {
     })
 })
 
+<<<<<<<<< Temporary merge branch 1
 
 
+=========
+>>>>>>>>> Temporary merge branch 2
 //This is for selecting radio size button
 
 const sizebtn = document.querySelectorAll('.size-radio-button');
@@ -28,7 +33,10 @@ sizebtn.forEach((item, i) => {
     })
 })
 
+<<<<<<<<< Temporary merge branch 1
 
+=========
+>>>>>>>>> Temporary merge branch 2
 const image = document.querySelectorAll(".product-images img");
 const activeIMG = document.querySelectorAll(".active-image img");
 const productname = document.querySelector(".details .product-name");
