@@ -13,7 +13,10 @@
     left: 0;
     width: 100%;
     background: rgba(161, 153, 153, 0.479);
-    z-index: 9;
+}
+
+.header2 .navlinks{
+  transform: translateX(-4.5%);
 }
 
 .navbar{
