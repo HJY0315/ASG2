@@ -4,10 +4,13 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const phone = document.querySelector("#phone");
 const APIKEY = "63b95c28969f06502871ac12";
+const emaillist = [];
 
 var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-submitButton.addEventListener('click', () => {
+$(".submit-btn").on("click", function(e) {
+    e.preventDefault();
+    
     if (username.value.length < 3) {
         alert("Name must be at least 3 letters long");
     }
@@ -27,7 +30,35 @@ submitButton.addEventListener('click', () => {
         alert("Invalid number, please enter a valid phone number with 8 digits");
     }
     else {
-        alert("sadasd");
+
+        let settings = {
+            "async": false,
+            "crossDomain": true,
+            "url": "https://interactivedev-333e.restdb.io/rest/profile",
+            "method": "GET",
+            "headers": {
+              "content-type": "application/json",
+              "x-apikey": APIKEY,
+              "cache-control": "no-cache"
+            },
+        }
+
+        $.ajax(settings).done(function (response) {
+            for (var i = 0; i < response.length; i++) {
+                emaillist.push(response[i].email);
+            }
+            post();
+        })
+    }
+})
+
+
+function post(){
+    if (emaillist.includes(email.value)){
+        alert("The email have been registered with another account");
+    }
+    else{
+        alert("lottieshowing");
         $(".lottieloading").show();
 
         let jsondata = {
@@ -56,5 +87,4 @@ submitButton.addEventListener('click', () => {
             $(".lottiecompleted").show().fadeOut(3000);
         })
     }
-})
-
+}
