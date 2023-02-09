@@ -180,7 +180,9 @@
     display: inline-block;
 }
 
-
+.hidden{
+    display: none;
+}
 .desc-line{
     margin-bottom: 10px;
 }

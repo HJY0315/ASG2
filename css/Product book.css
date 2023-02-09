@@ -106,3 +106,7 @@
 .booklottie{
     margin-left: 21px;
 }
+
+.hidden{
+    display: none;
+}

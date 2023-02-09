@@ -1,4 +1,4 @@
-
+//product scroller
 const productContainer = [...document.querySelectorAll('.product-container')];
 const nextbutton = [...document.querySelectorAll('.next-button')];
 const prevbutton = [...document.querySelectorAll('.prev-button')];
