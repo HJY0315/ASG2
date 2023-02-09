@@ -15,12 +15,21 @@ body{
     align-items: center;
 }
 
-.lottieloading, .lottiecompleted{
+.lottieloading, .lottiecompleted, .lottieloading2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
+    z-index: 8;
+}
+
+.close-btn h1{
+    position: relative;
+    top: 50px;
+    left: 280px;
+    text-decoration: none;
+    color: black;
 }
 
 h2{
@@ -64,4 +73,21 @@ h2{
     color: rgb(22, 22, 22);
     display: block;
     text-align: center;
+}
+
+.alert{
+    position: absolute;
+    padding: 50px;
+    color: black;
+    text-align: center;
+    background: none;
+    display: none;
+}
+
+.alert h2{
+    font-size: 25px;
+    background-color: white;
+    padding: 183px 100px;
+    border-radius: 60px;
+    border: 1px solid rgb(185, 185, 185);
 }
