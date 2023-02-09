@@ -66,7 +66,7 @@ window.onload = () => {
 const image = document.querySelectorAll(".product-images img");
 const activeIMG = document.querySelectorAll(".active-image img");
 const productname = document.querySelector(".details .product-name");
-const productoriginalprice = document.querySelector(".details .product-original-price");
+const productprice = document.querySelector(".details .product-price");
 const productdesc = document.querySelectorAll(".desc-list .desc-line");
 
 image[0].src = localStorage.getItem("src1");
@@ -74,10 +74,8 @@ image[1].src = localStorage.getItem("src2");
 activeIMG[0].src = localStorage.getItem("src1");
 productname.innerHTML = localStorage.getItem("name");
 productprice.innerHTML = localStorage.getItem("price");
-productoriginalprice.innerHTML = localStorage.getItem("Originalprice");
-productdiscount.innerHTML = localStorage.getItem("discount");
 
 //Change the product desc
 productdesc[0].children[1].innerHTML = localStorage.getItem("color");
 productdesc[1].children[1].innerHTML = localStorage.getItem("size&fit");
-productdesc[3].children[1].innerHTML = localStorage.getItem("material");
+productdesc[2].children[1].innerHTML = localStorage.getItem("material");

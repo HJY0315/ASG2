@@ -5,7 +5,7 @@ const prevbutton = [...document.querySelectorAll('.prev-button')];
 
 productContainer.forEach((item, i) => {
     let c = item.getBoundingClientRect();
-    let containerWidth = c.width-200;
+    let containerWidth = c.width-1000;
 
     nextbutton[i].addEventListener('click', () => {
       item.scrollLeft += containerWidth;
