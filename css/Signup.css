@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: itim;
+    background-color: rgb(236, 236, 236);
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottieloading, .lottiecompleted{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+#name,#email,#password,#phone{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgb(75, 75, 75);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.loginlink{
+    color: rgb(22, 22, 22);
+    display: block;
+    text-align: center;
+}
