@@ -27,6 +27,41 @@ function change() {
   }
 
 
+  //for profile name and login logout display
+const profileimagebtn = document.getElementById("profileimg");
+const profilePopup = document.querySelector(".login-logout-popup");
+const popuptext = document.querySelector(".account-name");
+const loginOutBtn = document.querySelector(".login-out-btn");
+
+profileimagebtn.addEventListener('click', () => {
+  if (profilePopup.style.display == 'none'){
+    profilePopup.style.display  = "block";
+  }
+  else{
+    profilePopup.style.display = "none";
+  }
+})
+
+window.onload = () => {
+  let Username = localStorage.getItem("username")
+  if (Username != null){
+    popuptext.innerHTML = `Hi, ${Username}`;
+    loginOutBtn.innerHTML = 'Log out';
+    loginOutBtn.addEventListener('click', () => {
+      localStorage.removeItem("username")
+      window.location.reload(); 
+    })
+  }
+  else{
+    popuptext.innerHTML = 'Log in in order to place order';
+    loginOutBtn.innerHTML = 'Log in';
+    loginOutBtn.addEventListener('click', () => {
+      location.href = '/Signin.html'
+    })
+
+  }
+}
+
   //for  discount books products pages
 const Discountbookproducts = document.querySelectorAll(".discount .product-image a img");
 
