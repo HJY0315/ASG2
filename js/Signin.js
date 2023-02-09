@@ -37,7 +37,7 @@ $(".submit-btn").on("click", function(e) {
                     if(response[i].email == email.value){
                         if(response[i].password == password.value){
                             localStorage.setItem("username",response[i].name);
-                            window.location.href = "index.html";
+                            window.history.back();//go back to previous page
                             break;
                         }  
                         else{

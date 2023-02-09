@@ -89,7 +89,7 @@ function post(){
             $(".lottiecompleted").show().fadeOut(3000);
             localStorage.setItem("username",username.value)
             setTimeout(function () {
-                window.location.href = "index.html";
+                window.history.back();
              }, 2100)
         })
     }
