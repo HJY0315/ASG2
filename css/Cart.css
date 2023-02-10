@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(234, 234, 234);
+}
+.cart{
+    height: 200px;
+    margin: 10px 10vw;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.cart-item{
+    display: flex;
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cart-item img{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cart-item-detail{
+    margin-left: 10px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.cart h2{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.cart-item-quantity{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.removebtn{
+    margin-top: 5px;
+    padding: 8px;
+    background-color: rgb(188, 188, 188);
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-quantity{
+    height: 90%;
+    margin-top: 60px;
+    margin-right: 50px;
+
+}
+
+.price-quantity-detail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-item-oriprice{
+    margin-left: 8px;
+    text-decoration: line-through;
+    color: rgba(53, 53, 53, 0.63);
+}
+
+.item_discount{
+    color: rgb(253, 125, 125);
+    margin-left: 5px;
+}
+
+.total{
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totalprice_container{
+    height: 60px;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+
+
+
+@media(max-width: 1000px) {
+    .cart h2{
+        font-size: 18px;
+    }
+    .price-quantity h2{
+        font-size: 18px;
+    }
+    .price-quantity{
+        margin-top: 50px;   
+    }
+}
+
+@media(max-width: 500px) {
+    .cart h2{
+        font-size: 17px;
+    }
+    .price-quantity h2{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .price-quantity{
+        margin-right: 30px;
+        padding-left: 10px;
+    }
+}
+
