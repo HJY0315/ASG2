@@ -27,7 +27,8 @@ function change() {
   }
 
 
-  //for Popular books products pages
+
+  //for accessory products pages on click on product image
 const Accessoryproducts = document.querySelectorAll(".product-image a img");
 
 Accessoryproducts.forEach((item, i) => {
@@ -49,5 +50,31 @@ Accessoryproducts.forEach((item, i) => {
     localStorage.setItem("color",color);
     localStorage.setItem("size&fit",size_fit);
     localStorage.setItem("material",material);
+  })
+})
+
+//for accessory products pages on click on add to cart button
+var PaccessCart_btn = document.querySelectorAll(".Add-btn");
+
+PaccessCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[0].children[0].src;
+    var src2 = parent.previousElementSibling.children[1].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var color = parent.children[2].children[0].innerHTML;
+    var size_fit = parent.children[2].children[1].innerHTML;
+    var material = parent.children[2].children[2].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("src2",src2);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice","");
+    localStorage.setItem("discount","");
+    localStorage.setItem("color",color);
+    localStorage.setItem("size&fit",size_fit);
+    localStorage.setItem("material",material);
+    location.href = "Product_accessories.html";
   })
 })
