@@ -180,3 +180,34 @@ PClothCart_btn.forEach((item, i) => {
     location.href = "Product-cloth.html";
   })
 })
+
+
+const cart_item = [];
+
+//Add to cart button
+var AddToCartBtn = document.querySelector(".add-cart-btn");
+
+AddToCartBtn.addEventListener('click', () =>{
+  let price_with_$ = document.querySelector('.product-price').innerHTML;
+  let Oriprice_with_$ = document.querySelector('.product-original-price').innerHTML;
+
+  let productObj = {
+    product_image: document.querySelector('.active').src,
+    product_name: document.querySelector('.product-name').innerHTML,
+    product_size: document.querySelector('input[name=size]:checked').value,
+    product_price: price_with_$.substring(price_with_$.indexOf('$') + 1),
+    product_OriPrice: Oriprice_with_$.substring(Oriprice_with_$.indexOf('$') + 1),
+    product_discount: document.querySelector('.product-discount').innerHTML,
+  }
+
+  cart_item.push(productObj); //put in the new cart items
+  let existItems = JSON.parse(localStorage.getItem("CartObj"));//get the array with items from localstorage
+  if (existItems != null){ //if the array in localstorage have cart items
+    for (let i = 0; i < existItems.length; i++) {
+      cart_item.push(existItems[i]);//store the items inside the array
+    }
+  }
+  localStorage.setItem("CartObj",JSON.stringify(cart_item)); //assign the updated cart items array to localstorage
+
+  $(".AddCartlottie").show().fadeOut(3000); //display lottie
+})
