@@ -91,6 +91,9 @@ In this section, I will mention all of the languages, frameworks, libraries and 
 4. Testing out media screen with the product table and footer with different sizes.
 5. Try to add, remove the carts
 
+# Video
+[ID_H&R_Pitch](https://drive.google.com/drive/folders/1UaoxeGx3r8zIdMBtBq2MA91gi3f9aBmM?usp=share_link)
+
 # Credits
 
 ## Content
