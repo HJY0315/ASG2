@@ -62,7 +62,7 @@ window.onload = () => {
   }
 }
 
-  //for  discount books products pages
+  //for  discount books products pages on click on product image
 const Discountbookproducts = document.querySelectorAll(".discount .product-image a img");
 
 Discountbookproducts.forEach((item, i) => {
@@ -85,8 +85,34 @@ Discountbookproducts.forEach((item, i) => {
   })
 })
 
+//for  discount books products pages onclick on add to cart button
+var DBookCart_btn = document.querySelectorAll(".discount .Add-btn");
 
-//for Popular books products pages
+DBookCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;//.product-info
+    var id = item.parentElement.parentElement.id;
+    var src1 = parent.previousElementSibling.children[1].children[0].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Originalprice = parent.children[1].children[1].innerHTML;
+    var discount = parent.previousElementSibling.children[0].innerHTML;
+    var Nopages = item.previousElementSibling.children[0].innerHTML;
+    var bookdesc = item.previousElementSibling.children[1].innerHTML;
+    localStorage.setItem("id",id);
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice",Originalprice);
+    localStorage.setItem("discount",discount);
+    localStorage.setItem("Nopages",Nopages);
+    localStorage.setItem("bookdesc",bookdesc);
+    location.href = "Product-book.html";
+  })
+})
+
+
+//for Popular books products pages on click on the product image
 const Popularbookproducts = document.querySelectorAll(".product-image a img");
 
 Popularbookproducts.forEach((item, i) => {
@@ -104,5 +130,27 @@ Popularbookproducts.forEach((item, i) => {
     localStorage.setItem("discount","");
     localStorage.setItem("Nopages",Nopages);
     localStorage.setItem("bookdesc",bookdesc);
+  })
+})
+
+//for Popular books products pages on click on add to cart button
+var PBookCart_btn = document.querySelectorAll(".Add-btn");
+
+PBookCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[0].children[0].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Nopages = item.previousElementSibling.children[0].innerHTML;
+    var bookdesc = item.previousElementSibling.children[1].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice","");
+    localStorage.setItem("discount","");
+    localStorage.setItem("Nopages",Nopages);
+    localStorage.setItem("bookdesc",bookdesc);
+    location.href = "Product-book.html";
   })
 })
