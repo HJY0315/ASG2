@@ -110,3 +110,12 @@
 .hidden{
     display: none;
 }
+
+.AddCartlottie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 5;
+}
