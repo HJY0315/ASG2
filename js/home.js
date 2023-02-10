@@ -88,8 +88,46 @@ Discclothproducts.forEach((item, i) => {
   })
 })
 
+//for popular cloth products pages on click on add to cart button
+var DClothCart_btn = document.querySelectorAll(".Discount .clothing .Add-btn");
 
-//for popular cloth products pages
+DClothCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[1].children[0].src;
+    var src2 = parent.previousElementSibling.children[2].src;
+    var src3 = parent.previousElementSibling.children[3].src;
+    var src4 = parent.previousElementSibling.children[4].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Originalprice = parent.children[1].children[1].innerHTML;
+    var discount = parent.previousElementSibling.children[0].innerHTML;
+    var color = parent.children[2].children[0].innerHTML;
+    var length = parent.children[2].children[1].innerHTML;
+    var fitType = parent.children[2].children[2].innerHTML;
+    var material = parent.children[2].children[3].innerHTML;
+    var careInstruction = parent.children[2].children[4].innerHTML;
+    var composition = parent.children[2].children[5].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("src2",src2);
+    localStorage.setItem("src3",src3);
+    localStorage.setItem("src4",src4);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice",Originalprice);
+    localStorage.setItem("discount",discount);
+    localStorage.setItem("color",color);
+    localStorage.setItem("length",length);
+    localStorage.setItem("fitType",fitType);
+    localStorage.setItem("material",material);
+    localStorage.setItem("careInstruction",careInstruction);
+    localStorage.setItem("composition",composition);
+    location.href = "Product-cloth.html";
+  })
+})
+
+
+//for popular cloth products pages on click on product image
 const Popularclothproducts = document.querySelectorAll(".Popular .clothing .product-image a img");
 
 Popularclothproducts.forEach((item, i) => {
@@ -124,12 +162,50 @@ Popularclothproducts.forEach((item, i) => {
   })
 })
 
-//for  discount books products pages
+//for popular cloth products pages on click on add to cart button
+var PClothCart_btn = document.querySelectorAll(".Popular .clothing .Add-btn");
+
+PClothCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[0].children[0].src;
+    var src2 = parent.previousElementSibling.children[1].src;
+    var src3 = parent.previousElementSibling.children[2].src;
+    var src4 = parent.previousElementSibling.children[3].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var color = parent.children[2].children[0].innerHTML;
+    var length = parent.children[2].children[1].innerHTML;
+    var fitType = parent.children[2].children[2].innerHTML;
+    var material = parent.children[2].children[3].innerHTML;
+    var careInstruction = parent.children[2].children[4].innerHTML;
+    var composition = parent.children[2].children[5].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("src2",src2);
+    localStorage.setItem("src3",src3);
+    localStorage.setItem("src4",src4);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice","");
+    localStorage.setItem("discount","");
+    localStorage.setItem("color",color);
+    localStorage.setItem("length",length);
+    localStorage.setItem("fitType",fitType);
+    localStorage.setItem("material",material);
+    localStorage.setItem("careInstruction",careInstruction);
+    localStorage.setItem("composition",composition);
+    location.href = "Product-cloth.html";
+  })
+})
+
+
+//for  discount books products pages on click on image
 const Discountbookproducts = document.querySelectorAll(".Discount .book .product-image a img");
 
 Discountbookproducts.forEach((item, i) => {
   item.addEventListener('click', () =>{
     let parent = item.parentElement.parentElement;
+    var id = item.parentElement.parentElement.parentElement.id;
     var src1 = item.src;
     var name = parent.nextElementSibling.children[0].innerHTML;
     var price = parent.nextElementSibling.children[1].children[0].innerHTML;
@@ -137,6 +213,7 @@ Discountbookproducts.forEach((item, i) => {
     var discount = parent.children[0].innerHTML;
     var Nopages = parent.nextElementSibling.children[2].children[0].innerHTML;
     var bookdesc = parent.nextElementSibling.children[2].children[1].innerHTML;
+    localStorage.setItem("id",id);
     localStorage.setItem("src1",src1);
     localStorage.setItem("name",name);
     localStorage.setItem("price",price);
@@ -147,8 +224,34 @@ Discountbookproducts.forEach((item, i) => {
   })
 })
 
+//for  discount books products pages onclick on add to cart button
+var DBookCart_btn = document.querySelectorAll(".Discount .book .Add-btn");
 
-//for Popular books products pages
+DBookCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;//.product-info
+    var id = item.parentElement.parentElement.id;
+    var src1 = parent.previousElementSibling.children[1].children[0].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Originalprice = parent.children[1].children[1].innerHTML;
+    var discount = parent.previousElementSibling.children[0].innerHTML;
+    var Nopages = item.previousElementSibling.children[0].innerHTML;
+    var bookdesc = item.previousElementSibling.children[1].innerHTML;
+    localStorage.setItem("id",id);
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice",Originalprice);
+    localStorage.setItem("discount",discount);
+    localStorage.setItem("Nopages",Nopages);
+    localStorage.setItem("bookdesc",bookdesc);
+    location.href = "Product-book.html";
+  })
+})
+
+
+//for Popular books products pages on click on image
 const Popularbookproducts = document.querySelectorAll(".Popular .popular-book .product-image a img");
 
 Popularbookproducts.forEach((item, i) => {
@@ -166,5 +269,27 @@ Popularbookproducts.forEach((item, i) => {
     localStorage.setItem("discount","");
     localStorage.setItem("Nopages",Nopages);
     localStorage.setItem("bookdesc",bookdesc);
+  })
+})
+
+//for Popular books products pages on click on add to cart button
+var PBookCart_btn = document.querySelectorAll(".Popular .popular-book .Add-btn");
+
+PBookCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[0].children[0].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Nopages = item.previousElementSibling.children[0].innerHTML;
+    var bookdesc = item.previousElementSibling.children[1].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice","");
+    localStorage.setItem("discount","");
+    localStorage.setItem("Nopages",Nopages);
+    localStorage.setItem("bookdesc",bookdesc);
+    location.href = "Product-book.html";
   })
 })
