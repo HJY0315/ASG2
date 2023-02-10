@@ -192,6 +192,28 @@ h4{
   height: 290px;
 }
 
+.product-info h2{
+  text-transform: capitalize;
+  height: 60px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.normal-price{
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.536);
+}
+
+.discountprices{
+  display: flex;
+  justify-content: center;
+}
+
+.discountprices .normal-price{
+  margin-left: 10px;
+}
+
   /*women's section*/
 .Wdress, .Wshirt, .Wpants{
     position: relative;
