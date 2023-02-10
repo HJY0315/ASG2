@@ -106,3 +106,7 @@ In this section, I will mention all of the languages, frameworks, libraries and 
 - I received inspiration for this project from:
 - [Shein](https://sg.shein.com/)
 - [Sephora](https://www.sephora.sg/)
+
+
+## Github Page
+-https://hjy0315.github.io/ASG2/
