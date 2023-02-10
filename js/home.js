@@ -51,7 +51,7 @@ window.onload = () => {
   }
 }
 
-//for discounted cloth products pages
+//for discounted cloth products pages on click of the product image
 const Discclothproducts = document.querySelectorAll(".Discount .clothing .product-image a img");
 
 Discclothproducts.forEach((item, i) => {
@@ -88,7 +88,7 @@ Discclothproducts.forEach((item, i) => {
   })
 })
 
-//for popular cloth products pages on click on add to cart button
+//for discount cloth products pages on click on add to cart button
 var DClothCart_btn = document.querySelectorAll(".Discount .clothing .Add-btn");
 
 DClothCart_btn.forEach((item, i) => {
