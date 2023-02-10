@@ -109,7 +109,7 @@ productdesc[4].children[2].innerHTML = localStorage.getItem("careInstruction");
 productdesc[5].children[2].innerHTML = localStorage.getItem("composition");
 
 
-//for popular cloth products pages transfer details
+//for popular cloth products pages on click on product image
 const Popularclothproducts = document.querySelectorAll(".clothing .product-image a img");
 
 Popularclothproducts.forEach((item, i) => {
