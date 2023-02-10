@@ -70,7 +70,7 @@ productdiscount.innerHTML = localStorage.getItem("discount");
 ProductPages.innerHTML = localStorage.getItem("Nopages");
 Bookdesc.innerHTML = localStorage.getItem("bookdesc");
 
-//for Popular books products pages
+//for Popular books products pages on click on product image
 const Popularbookproducts = document.querySelectorAll(".popular-book .product-image a img");
 
 Popularbookproducts.forEach((item, i) => {
