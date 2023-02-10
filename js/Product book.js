@@ -140,6 +140,7 @@ AddToCartBtn.addEventListener('click', () =>{
       cart_item.push(existItems[i]);//store the items inside the array
     }
   }
+  
   localStorage.setItem("CartObj",JSON.stringify(cart_item)); //assign the updated cart items array to localstorage
 
   $(".AddCartlottie").show().fadeOut(3000); //display lottie
