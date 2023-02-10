@@ -27,10 +27,8 @@ body{
 
 .cart-item-detail{
     margin-left: 10px;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    margin-top: 60px;
     height: 150px;
 }
 
@@ -58,7 +56,6 @@ body{
     height: 90%;
     margin-top: 60px;
     margin-right: 50px;
-
 }
 
 .price-quantity-detail{
