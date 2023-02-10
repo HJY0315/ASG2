@@ -72,7 +72,7 @@ for (let i = 0; i < Cart_items.length; i++) {
             <img src="${data_image}">
             <div class="cart-item-detail">
                 <h2 class="cart-item-name">${data_name}</h2>
-                <h2 class="cart-item-size">${data_size}</h2>
+                <h2 class="cart-item-size">Size: ${data_size}</h2>
             </div>
         </div>
         <div class="price-quantity">
