@@ -90,3 +90,59 @@ Popularbookproducts.forEach((item, i) => {
     localStorage.setItem("bookdesc",bookdesc);
   })
 })
+
+
+//for Popular books products pages on click on add to cart button
+var PBookCart_btn = document.querySelectorAll(".more_product .Add-btn");
+
+PBookCart_btn.forEach((item, i) => {
+  item.addEventListener('click', () =>{
+    let parent = item.parentElement;
+    var src1 = parent.previousElementSibling.children[0].children[0].src;
+    var name = parent.children[0].innerHTML;
+    var price = parent.children[1].children[0].innerHTML;
+    var Nopages = item.previousElementSibling.children[0].innerHTML;
+    var bookdesc = item.previousElementSibling.children[1].innerHTML;
+    localStorage.setItem("src1",src1);
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("Originalprice","");
+    localStorage.setItem("discount","");
+    localStorage.setItem("Nopages",Nopages);
+    localStorage.setItem("bookdesc",bookdesc);
+    location.href = "Product-book.html";
+  })
+})
+
+
+const cart_item = [];
+
+//Add to cart button
+var AddToCartBtn = document.querySelector(".add-cart-btn");
+
+AddToCartBtn.addEventListener('click', () =>{
+  let price_with_$ = document.querySelector('.product-price').innerHTML;
+  let Oriprice_with_$ = document.querySelector('.product-original-price').innerHTML;
+
+  let productObj = {
+    product_image: document.querySelector('.active').src,
+    product_name: document.querySelector('.product-name').innerHTML,
+    product_size: "null",
+    product_price: price_with_$.substring(price_with_$.indexOf('$') + 1),
+    product_OriPrice: Oriprice_with_$.substring(Oriprice_with_$.indexOf('$') + 1),
+    product_discount: document.querySelector('.product-discount').innerHTML,
+  }
+
+  cart_item.push(productObj); //put in the new cart items
+  let existItems = JSON.parse(localStorage.getItem("CartObj"));//get the array with items from localstorage
+  if (existItems != null){ //if the array in localstorage have cart items
+    for (let i = 0; i < existItems.length; i++) {
+      cart_item.push(existItems[i]);//store the items inside the array
+    }
+  }
+  localStorage.setItem("CartObj",JSON.stringify(cart_item)); //assign the updated cart items array to localstorage
+
+  $(".AddCartlottie").show().fadeOut(3000); //display lottie
+})
+
+
