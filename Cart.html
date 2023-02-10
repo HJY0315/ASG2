@@ -6,13 +6,13 @@
 	<meta name="description" content="Website for ID ASG1">
 	<title>ID ASG2 Website</title>
 	<link href="css/home.css" rel="stylesheet" type="text/css" />  
-    <link href="css/Shopping.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Cart.css" rel="stylesheet" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href='https://fonts.google.com/specimen/Itim' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!--<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>-->
 </head>
 <body>
 	<nav class="header">
@@ -24,55 +24,26 @@
                 <li><a href="Book.html" class="link">BOOK</a></li>
             </ul>
             <a href="Cart.html" class="split">
-                <i style="font-size:48px" class="fa">&#xf07a;</i> <!-- shopping cart icon-->
-            </a>
-            <a href="Account.html" class="split">
-                <i style="font-size:48px" class="fa">&#xf007;</i> <!-- account / user icon -->
-            </a>
+              <i style="font-size:40px" class="fa">&#xf07a;</i> <!-- shopping cart icon-->
+            </a>  
+            <div class="split">
+              <i style="font-size:40px" id="profileimg" class="fa">&#xf007;</i> <!-- account / user icon -->
+              <div class="login-logout-popup">
+                <p class="account-name">Hi, name</p>
+                <button class="login-out-btn">Log out</button>
+              </div>
+            </div>
         </div>
     </nav>
-    <footer class="footer">
-        <!-- Grid container -->
-        <div class="container">
-            <div class="row">
-                <!--About-->
-                <div class="footer-col">
-                <h4>about us</h4>
-                <a>A footer is an additional navigation component. It can hold links, buttons, company info, copyrights, forms, and many other elements.</a>
-            </div>
-            <!--Products-->
-            <div class="footer-col">
-                <h4>Menu Guide</h4>
-                <ul>
-                    <li><a href="Shopping.html">Clothing</a></li>
-                    <li><a href="Accessories.html">Accessories</a></li>
-                    <li><a href="Shoes.html">Shoes</a></li>
-                    <li><a href="Book.html">Book</a></li>
-                </ul>
-            </div>
-            <!--Links-->
-            <div class="footer-col">
-                <h4>customer care</h4>
-                <ul>
-                    <li><a href="#">shipping & FAQ</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Payment Information</a></li>
-                    <li><a href="#">Track You Order</a></li>
-                    <li><a href="#">Rewards Program</a></li>
-                </ul>
-            </div>
-            <!--Contact-->
-            <div class="footer-col">
-                <h4>contact us</h4>
-                <div class="social-links">
-                    <p>address</p>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+
+
+    <div class="total">
+        <div class="totalprice_container">
+            <span class="totalpricetext">Total price: $</span><span class="price"></span>
         </div>
-        </div>
-        <!-- Grid container -->
-      </footer>
-      </body>
-      </html>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/Cart.js"></script>
+    </body>
+</html>
